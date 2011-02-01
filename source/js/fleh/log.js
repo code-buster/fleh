@@ -1,4 +1,3 @@
-
 /**
  * Log class for Fleh.
  */
@@ -24,7 +23,7 @@ Fleh.Log = new Class({
 	/**
 	 * @var Age of log messages in minutes before they are deleted
 	 */
-	maxLogAge: 10,
+	maxLogAge: 30,
 
 	/**
 	 * @var Logged messages

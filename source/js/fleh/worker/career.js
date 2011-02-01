@@ -241,7 +241,7 @@ Fleh.Worker.Career = new Class({
 
 			text = 'Restzeit: ' + Fleh.Tools.formatTime(12.0 * hours_rest - 2.0 * this.fleh.fv.getCurrentEnergy());
 			text += ' = ' + Fleh.Tools.formatTime(2.0 * hours_rest) + ' Arbeit';
-			text += ' + ' + Fleh.Tools.formatTime(10.0 * hours_rest) + ' Erholung';
+			text += ' + ' + Fleh.Tools.formatTime(12.0 * hours_rest) + ' Erholung';
 
 			if (this.fleh.fv.getCurrentEnergy() > 0) {
 				text += ' - ' + Fleh.Tools.formatTime(2.0*this.fleh.fv.getCurrentEnergy()) + ' Restenergie';

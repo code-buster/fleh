@@ -1,4 +1,3 @@
-
 Fleh.Worker = new Class({
 
 	fleh: null,
@@ -24,7 +23,7 @@ Fleh.Worker = new Class({
 			this.fleh.log.log(text);
 		} else if (this.fleh.fv.getMaxEnergy() > this.fleh.fv.getCurrentEnergy()) {
 			full = new Date();
-			full.setTime(full.getTime() + 1000 * 60 * 10 * (this.fleh.fv.getMaxEnergy() - this.fleh.fv.getCurrentEnergy()));
+			full.setTime(full.getTime() + 1000 * 60 * 12 * (this.fleh.fv.getMaxEnergy() - this.fleh.fv.getCurrentEnergy()));
 			time = full.getHours() + ":" + (full.getMinutes() > 9 ? "" : 0) + full.getMinutes();
 			text = "volle Energie (" + this.fleh.fv.getMaxEnergy() + ") um " + time;
 			this.fleh.log.log(text);
